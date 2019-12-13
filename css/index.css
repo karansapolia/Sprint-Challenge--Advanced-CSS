@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 3.8rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -155,22 +158,45 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+a {
+  font-size: 1.6rem;
+}
+img {
+  max-width: 100%;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 .navigation-div {
-  padding: 3% 0 2% 0;
+  padding: 1% 0 1% 0;
   background-color: #F6F6F6;
+  border: 1px solid #F1F1F1;
 }
 .navigation-div .navigation-content {
   margin: 0 auto;
   max-width: 800px;
   display: flex;
   flex-flow: column nowrap;
+}
+.navigation-div .navigation-content div {
+  flex-grow: 1;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.navigation-div .navigation-content nav {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
+}
+.navigation-div .navigation-content nav a {
+  text-decoration: none;
+  margin: 0 2%;
+  font: #454A59;
+  color: #23293B;
 }
 footer {
   color: #22283B;
