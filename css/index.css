@@ -178,6 +178,8 @@ img {
   margin: 0 auto;
   max-width: 800px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: column nowrap;
 }
 .navigation-div .navigation-content div {
@@ -210,6 +212,9 @@ footer {
 }
 .home .intro h2 {
   padding: 15px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro p {
   padding: 0 15px;
@@ -249,6 +254,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 10rem;
+  height: 3rem;
+  background-color: #22283A;
+  color: #F6F6F6;
+  text-align: center;
+  padding: 1%;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  border: 1px solid #dee2e6;
 }
 .home .walk .walk-img {
   width: 46%;

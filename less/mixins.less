@@ -1,1 +1,18 @@
 // Mixins Here
+.flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button(@width: 5rem, @height: 3rem, @bgcolor: @btn-bg-color,  @color: @wild-sand) {
+    width: @width;
+    height: @height;
+    background-color: @bgcolor;
+    color: @color;
+    text-align: center;
+    padding: 1%;
+    border-radius: 0.5rem;
+    font-size: 2.0rem;
+    border: 1px solid @main-border-color;
+}
