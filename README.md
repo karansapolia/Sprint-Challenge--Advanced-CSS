@@ -34,13 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    - Ans. An adaptive website is built to resize and rearrange itself to specific screen-sizes using media queries and max-width / min-width. Its styling might break on resizing for sizes in-between the screen-sizes it was designed to support. The layout widths might still be hardcoded at each media query.
+A fully-responsive website is built to resize fluidly instead of only for specific screen sizes. It maintains its sizing for all screen sizes. The styling of the website should not break on scaling it to any screen size. It should stay consistent throughout. It also uses media queries for specific screen sizes but can scale to all and even newer sizes. Fully responsive is usually achieved by using relative units like % and em/rem instead of absolute sizing like px.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    - Ans. Mobile first design means to design first with mobile screens in mind and then adapt the layout to bigger screen sizes using media queries like min-width.
+Desktop first design means to design starting with a desktop view as the base and then adapt the design to smaller screen sizes using media query properties like max-width.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    - Ans. The default font-size on most browsers is 16px. Setting the global font-size to 62.5% makes it effectively 0.625 * 16 = 10px. Because rem sizes are relative to the root font-size, setting font-size to 62.5% makes setting other font-sizes easier, as everything will be a multiple of 10 instead of 16. This makes the math easier while deciding font-size. So 1rem equals 10px and 1.8rem equals 18px. This is easier to calculate than using 16px as the base font-size and calculating relative to it.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    - Ans. Preprocessing is a more robust syntax for CSS written in a different language. That language is then compiled into normal CSS. Preprocessing introduces simpler syntax and many features which are not a default part of the CSS language. Preprocessing helps increase productivity and decrease errors in writing CSS.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    - Ans. My favourite Preprocessing concept is nesting. It makes thinking and working with CSS layout closer to how layouts are nested in HTML. Escaping is something that I fear the most because I am not confident to what level interpolation works in Less. Escaping simple statements like CSS properties is clear but to what extent interpolation works with CSS functions and other things.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

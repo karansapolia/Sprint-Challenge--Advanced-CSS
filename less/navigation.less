@@ -1,1 +1,35 @@
 // Navigation code here
+.navigation-div {
+    .fixed-to-top();
+    width: 100%;
+    padding: 10px 0;
+    background-color: darken(@nav-bg, 20%);
+    border: 1px solid @nav-border;
+
+    .navigation-content {
+        margin: 0 auto;
+        max-width: 800px;
+        .flex-center(); 
+        flex-flow: column nowrap;
+
+        div {
+            flex-grow: 1;
+            text-align: center;
+            padding-bottom: 2%;
+        }
+
+        nav {
+            width: 100%;
+            flex-grow: 1;
+            .flex-center();
+
+            a {
+                text-decoration: none;
+                margin: 0 2%;
+                font: @river-bend;
+                color: @header-font-color;
+            }
+        }
+
+    }
+}
