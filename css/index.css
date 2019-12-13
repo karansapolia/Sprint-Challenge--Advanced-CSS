@@ -173,7 +173,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1% 0;
+  padding: 10px 0;
   background-color: #c3c3c3;
   border: 1px solid #F1F1F1;
 }
@@ -216,11 +216,11 @@ footer {
   align-items: center;
 }
 .home {
-  margin-top: 91px;
+  margin-top: 92px;
 }
 @media (max-width: 500px) {
   .home {
-    margin-top: 15.5%;
+    margin-top: 85px;
   }
 }
 .home .intro h2 {
